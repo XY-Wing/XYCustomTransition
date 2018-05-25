@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		20C3300420B2568A007B0EF1 /* XYPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C3300320B2568A007B0EF1 /* XYPercentDrivenInteractiveTransition.m */; };
 		20C3300720B26110007B0EF1 /* XYInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C3300520B2610F007B0EF1 /* XYInteractiveTransition.m */; };
+		20DA092A20B804C7007C58BF /* XYTransitioning4SubVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DA092620B804C6007C58BF /* XYTransitioning4SubVC.m */; };
+		20DA092B20B804C7007C58BF /* XYTransitioning4VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DA092920B804C7007C58BF /* XYTransitioning4VC.m */; };
 		20E0BF8420AE7A7D00C180A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E0BF8320AE7A7D00C180A5 /* AppDelegate.m */; };
 		20E0BF8C20AE7A7D00C180A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E0BF8B20AE7A7D00C180A5 /* Assets.xcassets */; };
 		20E0BF8F20AE7A7D00C180A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E0BF8D20AE7A7D00C180A5 /* LaunchScreen.storyboard */; };
@@ -25,6 +27,10 @@
 		20C3300320B2568A007B0EF1 /* XYPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
 		20C3300520B2610F007B0EF1 /* XYInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYInteractiveTransition.m; sourceTree = "<group>"; };
 		20C3300620B26110007B0EF1 /* XYInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYInteractiveTransition.h; sourceTree = "<group>"; };
+		20DA092620B804C6007C58BF /* XYTransitioning4SubVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTransitioning4SubVC.m; sourceTree = "<group>"; };
+		20DA092720B804C7007C58BF /* XYTransitioning4SubVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTransitioning4SubVC.h; sourceTree = "<group>"; };
+		20DA092820B804C7007C58BF /* XYTransitioning4VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYTransitioning4VC.h; sourceTree = "<group>"; };
+		20DA092920B804C7007C58BF /* XYTransitioning4VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYTransitioning4VC.m; sourceTree = "<group>"; };
 		20E0BF7F20AE7A7C00C180A5 /* CustomTransitionAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTransitionAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E0BF8220AE7A7C00C180A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		20E0BF8320AE7A7D00C180A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +94,10 @@
 				20E0BFA220AEAC5400C180A5 /* XYTransitioning2VC.m */,
 				20E0BFA520AEB95A00C180A5 /* XYTransitioning3VC.h */,
 				20E0BFA620AEB95A00C180A5 /* XYTransitioning3VC.m */,
+				20DA092820B804C7007C58BF /* XYTransitioning4VC.h */,
+				20DA092920B804C7007C58BF /* XYTransitioning4VC.m */,
+				20DA092720B804C7007C58BF /* XYTransitioning4SubVC.h */,
+				20DA092620B804C6007C58BF /* XYTransitioning4SubVC.m */,
 				20C3300220B2568A007B0EF1 /* XYPercentDrivenInteractiveTransition.h */,
 				20C3300320B2568A007B0EF1 /* XYPercentDrivenInteractiveTransition.m */,
 				20C3300620B26110007B0EF1 /* XYInteractiveTransition.h */,
@@ -171,12 +181,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E0BF9D20AE7ADF00C180A5 /* XYHomeVC.m in Sources */,
+				20DA092A20B804C7007C58BF /* XYTransitioning4SubVC.m in Sources */,
 				20E0BFA720AEB95A00C180A5 /* XYTransitioning3VC.m in Sources */,
 				20E0BFA020AE7BDE00C180A5 /* XYTransitioningVC.m in Sources */,
 				20C3300720B26110007B0EF1 /* XYInteractiveTransition.m in Sources */,
 				20E0BFA320AEAC5400C180A5 /* XYTransitioning2VC.m in Sources */,
 				20C3300420B2568A007B0EF1 /* XYPercentDrivenInteractiveTransition.m in Sources */,
 				20E0BF9220AE7A7E00C180A5 /* main.m in Sources */,
+				20DA092B20B804C7007C58BF /* XYTransitioning4VC.m in Sources */,
 				20E0BF9A20AE7AD000C180A5 /* XYNavigationVC.m in Sources */,
 				20E0BF8420AE7A7D00C180A5 /* AppDelegate.m in Sources */,
 			);

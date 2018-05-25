@@ -10,6 +10,7 @@
 #import "XYTransitioningVC.h"
 #import "XYTransitioning2VC.h"
 #import "XYTransitioning3VC.h"
+#import "XYTransitioning4VC.h"
 #import "XYInteractiveTransition.h"
 @interface XYHomeVC ()<UITableViewDelegate,UITableViewDataSource,UIViewControllerTransitioningDelegate>
 @property(nonatomic,strong)UITableView *tableV;
@@ -47,7 +48,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     _titleArr = ({
-        NSArray *arr = @[@"动画1",@"动画2",@"动画3"];
+        NSArray *arr = @[@"动画1",@"动画2",@"动画3",@"动画4"];
         arr;
     });
     [self.view addSubview:self.tableV];
@@ -63,7 +64,7 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 4;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -83,6 +84,9 @@
             break;
         case 2:
             [self transitioning3];
+            break;
+        case 3:
+            [self transitioning4];
             break;
             
         default:
@@ -104,5 +108,10 @@
 {
     XYTransitioning3VC *vc = [[XYTransitioning3VC alloc] init];
     [self presentViewController:vc animated:YES completion:nil];
+}
+- (void)transitioning4
+{
+    XYTransitioning4VC *vc = [[XYTransitioning4VC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end
